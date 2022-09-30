@@ -1,0 +1,50 @@
+:host {
+  font-family: sans-serif;
+  border: 2px solid var(--color-primary, black);
+  margin: 2rem;
+  padding: 1rem;
+  display: block;
+  width: 20rem;
+  max-width: 100%;
+}
+
+:host(.error) {
+  border-color: orange;
+}
+
+form input {
+  font: inherit;
+  color: var(--color-primary, black);
+  padding: .15rem .25rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input:focus,
+form button:focus {
+  outline: none;
+}
+
+form button {
+  font: inherit;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--color-primary, black);
+  background-color: var(--color-primary, black);
+  color: var(--color-primary-inverse, whitesmoke);
+  cursor: pointer;
+}
+
+form button:hover,
+form button:active {
+  background-color: var(--color-primary, black);
+  border-color: var(--color-primary, black);
+}
+
+form button:disabled {
+  background-color: var(--color-primary-inverse, whitesmoke);
+  border-color: var(--color-primary-inverse, whitesmoke);
+  color: var(--color-primary-inverse, whitesmoke);
+  cursor: not-allowed;
+}
+
+
